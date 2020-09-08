@@ -36,6 +36,24 @@ export default class HomePage extends Component {
             navigation.navigate('Page3', {name: 'devio'});
           }}
         />
+          <Button
+              title={'Go to BottomNavigator'}
+              onPress={() => {
+                  navigation.navigate('Bottom');
+              }}
+          />
+          <Button
+              title={'Go to TopNavigator'}
+              onPress={() => {
+                  navigation.navigate('Top');
+              }}
+          />
+          <Button
+              title={'Go to DrawerNavigator'}
+              onPress={() => {
+                  navigation.navigate('DrawerNav');
+              }}
+          />
       </View>
     );
   }
